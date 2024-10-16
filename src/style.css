@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-directino: row;
+}
+.imgContainer {
+    width: 50%;
+    position: relative;
+}
+
+.imgContainer img {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    padding: 1em;
+}
+
+@media screen and (max-width: 768px){
+    .imgContainer {
+        width: 100%;
+    }
+    .imgContainer img {
+        padding: 0.5em 0 0.5em 0;
+        aspect-ratio: 2 / 3;
+    }
+}
