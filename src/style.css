@@ -5,7 +5,7 @@
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
-    flex-directino: row;
+    flex-direction: row;
 }
 .imgContainer {
     width: 50%;
@@ -17,6 +17,11 @@
     aspect-ratio: 1 / 1;
     padding: 1em;
 }
+
+.blur {
+    filter: blur(10px);
+    transition: filter 0.3s ease;
+  }
 
 @media screen and (max-width: 768px){
     .imgContainer {
