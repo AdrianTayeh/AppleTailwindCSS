@@ -16,10 +16,10 @@ headerLink.forEach((item, index) => {
       dropdown[index + 1].classList.remove("flex");
       dropdown[index + 1].classList.add("hidden");
     }
-    if (index !== 0) {
+    if (index !== 0 || index !== dropdown.length-1) {
       mainContent.classList.add("blur");
     }
-    if(index == 0) {
+    if(index == 0 || index == dropdown.length-1) {
       mainContent.classList.remove("blur");
     }
   });
@@ -29,7 +29,7 @@ dropdown.forEach((item, index) => {
   item.addEventListener("mouseenter", () => {
     dropdown[index].classList.remove("hidden");
     dropdown[index].classList.add("flex");
-    if (index !== 0) {
+    if (index !== 0 || index !== dropdown.length-1) {
       mainContent.classList.add("blur");
     }
     else {
